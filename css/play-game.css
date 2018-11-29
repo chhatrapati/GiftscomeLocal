@@ -1,0 +1,92 @@
+﻿@media only screen and (max-width: 768px) {
+	.Medi{display:none;	}
+}
+@media only screen and (min-width: 769px) {
+	#mySelect,#mySelect1{display:none; }
+}	
+body, html {height: 100%;font-family: Poppins-bold !important;font-weight: 400;}
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {margin-top: 0;margin-left: 10px;}
+input:checked {height: 13px;width: 13px;color: #08a6cc;}
+.btn-dng {color: #fff;background-color:#079992;border-color: #78e08f;height: 35px;width: 35px;}
+.btn-suc {color: #fff;background-color: #218838;border-color: #1e7e34;height:37px;}
+.button-main {/*position: absolute;top: 1px;left: 49px;*/}
+.playgme{color:#08a6cc;font-family:Montserrat-bold;text-align:center;}
+.pay1{text-align: center;background-image: url(images/balls.png);background-size: 12%;background-repeat: no-repeat;background-position: center;}
+.pay{text-align:center;}
+#freez_alert {z-index: 500; opacity: 0.9; display: none;color: #fff;background-color: #dc3545;border-color: #dc3545;padding:10px;bottom: 10px;}
+.form-horizontal .controls {margin-left: 50px;margin-bottom: 10px;padding:0;}
+.digit_img {margin-left: 0;}
+.col-md-3 {float:left;width:25%;}
+.form-control {border: 1px solid rgba(0,0,0,.15) !important;border-radius:.25rem !important;}
+.pay2 {color: #1f1f1e;font-size: 41px;background-color: #fff;border-radius: 20%;padding-left: 10px;padding-right: 10px;border:2px solid yellow;}
+.custom-table tr th{font-size: 14px;}
+.custom-table tr td{font-size: 14px;line-height:0 !important;}
+input.num-product {height:35px;}
+@media only screen and (max-width: 700px) {
+input.num-product{height:35px;width:35px;}
+}
+/*17-9-18 changes*/
+@media screen and (min-width: 375px)
+.custom-table tr th{
+font-size:11px;
+}
+@media screen and (min-width: 320px)
+.custom-table tr th{
+font-size:10px;
+}
+.clock{display: flex;justify-content: center;align-items: center; padding-top:15px;padding-bottom:1px;margin: 0rem;}
+.loadingmessage{display:none;text-align: center;padding-top:15px;padding-bottom:1px;}
+.loadingimg{position:absolute;z-index:10000;}
+.message1{display: flex;justify-content: center;align-items: center; padding-top:15px;padding-bottom:1px; color:#fff !important;}
+.alert-danger{display:none;width:50%;}
+.curr_bet_label{padding-top:7px; color:#fff;}
+.coin_balance_label{padding-top:7px; color:#fff;}
+.curr_bet_txt{align-self: center;min-width: 100px;width: 41px;margin-left: 10px;}
+.coin_balance_txt{align-self: center;min-width: 100px;margin-left: 10px;width: 49px;}
+
+
+@media screen and (max-width: 500px){
+  #mySelect,#mySelect1 {
+	  font-size:11px;
+    height: 32px;
+    width: 135px;
+    margin-bottom: 5px;
+    }
+    .gift{
+        display: none;
+    }
+    .btn-suc{
+    height: 35px;
+    width: 30px;
+    font-size: 12px;
+    padding: 5px;
+    }
+    .btn-dng{
+    height: 35px;
+    width: 30px;
+    font-size: 12px;
+    padding: 5px;
+    }
+
+}
+@media screen and (max-width: 568px)
+{
+    .list-heading-right{
+        display: none;
+    }
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 568px)
+{
+.table td, .table th {
+padding: .75rem !important;
+padding-left: .25rem !important;
+padding-right: .25rem !important;
+}
+}
+.matter{
+    display: flex;
+    justify-content: center;
+}

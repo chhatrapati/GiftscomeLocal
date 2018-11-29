@@ -1,0 +1,1 @@
+$(window).load(function(){var timespan=countdown(new Date(),new Date(2018,03,22),countdown.SECONDS);console.log(timespan);var clock=$('.your-clock').FlipClock(timespan.seconds,{countdown:true,clockFace:'DailyCounter'});})

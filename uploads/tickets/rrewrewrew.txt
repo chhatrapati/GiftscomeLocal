@@ -1,0 +1,87 @@
+<?php
+	$sp = "CALL winnig_no($id)";
+	$result = mysqli_query($con, $sp) or die(mysqli_error($con));
+	print_r($result);
+	while($row=mysqli_fetch_array($result))
+	{
+		echo $row[0];
+	}
+	  mysqli_free_result($result);mysqli_next_result($con);
+	 
+	?>
+	SELECT GROUP_CONCAT(bid_no)
+   FROM temp3
+   GROUP BY tt12;
+   
+   
+   <?php
+   BEGIN
+set @game_id = (SELECT pgame_id);
+DROP TABLE IF EXISTS `temp3`;
+create temporary table temp3(dig int,dig1 int) AS (
+SELECT 1 as tt12,`bid_no`, SUM(`bid_amount`) as ba FROM `tbl_userbids` where game_id=@game_id group by `bid_no` order  by ba asc LIMIT 5);
+set @var1 = (SELECT GROUP_CONCAT(bid_no)
+   FROM temp3
+   GROUP BY tt12);
+SELECT bid_no
+   FROM temp3 ORDER BY bid_no ASC LIMIT 1;
+END
+   ?>
+  <?php
+			$pp = 6;
+			$tot = 6;
+$groups = 3;
+$numbers = array();
+for($i = 1; $i < $groups; $i++) {
+    $num = rand(1, $tot-($groups-$i));
+    $tot -= $num;
+    $numbers[] = $num;
+}
+$numbers[] = $tot;
+echo $numbers[0];?> + <?php echo $numbers[1];?> + <?php echo $numbers[2];?> = <?php echo $pp;?>
+SELECT bid_no
+   FROM temp3 ORDER BY RAND() LIMIT 1;
+select * from tbl_userbids where game_id =17 AND bid_no =1 AND bid_amount>0
+select user_id, SUM(bid_amount) from tbl_userbids where game_id =17 AND bid_no =1 AND bid_amount>0 GROUP BY user_id
+select user_id, SUM(bid_amount) as bid_amount, bid_no from tbl_userbids where game_id =17 AND bid_no =1 AND bid_amount>0 GROUP BY user_id
+
+
+Begin
+set @game_id = (SELECT pgame_id);
+DROP TABLE IF EXISTS `temp1`;
+create temporary table temp1(dig int,dig1 int) AS (
+SELECT 1 as tt,`bid_no`, SUM(`bid_amount`) as ba FROM `tbl_userbids` where game_id=@game_id group by `bid_no` order  by ba asc LIMIT 5);
+set @var1 = (SELECT GROUP_CONCAT(bid_no)
+   FROM temp1
+   GROUP BY tt);
+   
+SELECT GROUP_CONCAT(bid_no)
+   FROM temp1
+   GROUP BY tt;
+
+update tbl_game_payout set payout_amount = payout_amount + 100 where FIND_IN_SET(payout_digit, @var1) and game_id = @game_id;
+
+DROP TABLE IF EXISTS `temp2`;
+
+create temporary table temp2(dig3 int,dig4 int) AS (
+SELECT 1 as tt1,`bid_no`, SUM(`bid_amount`) as ba FROM `tbl_userbids` where game_id=@game_id group by `bid_no` order  by ba desc LIMIT 5);
+
+set @var12 = (SELECT GROUP_CONCAT(bid_no)
+   FROM temp2
+   GROUP BY tt1);
+   
+SELECT GROUP_CONCAT(bid_no)
+   FROM temp2
+   GROUP BY tt1;
+
+set @varpay = (SELECT GROUP_CONCAT(payout_amount) from tbl_game_payout where FIND_IN_SET(payout_digit, @var12) and game_id = @game_id);
+
+SELECT GROUP_CONCAT(payout_amount) from tbl_game_payout where FIND_IN_SET(payout_digit, @var12) and game_id = @game_id;
+
+if(@varpay <= 100) THEN
+
+update tbl_game_payout set payout_amount = payout_amount where FIND_IN_SET(payout_digit, @var12) and game_id = @game_id;
+ELSE
+update tbl_game_payout set payout_amount = payout_amount-100 where FIND_IN_SET(payout_digit, @var12) and game_id = @game_id;
+end if;
+End

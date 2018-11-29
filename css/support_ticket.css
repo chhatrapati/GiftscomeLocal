@@ -1,0 +1,64 @@
+﻿input.form-control.textbox {
+    border: 1px solid rgba(33, 33, 33, 0.12) !important;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: none;
+    color: #212121;
+    height: 42px;
+	width:100%;
+}
+.card-view {
+    background: #fff;
+    margin-bottom: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.1);
+    border-radius: 2px;
+    box-shadow: none;
+    padding: 15px 15px 0;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+.card-view.panel > .panel-heading {
+    border: none;
+    color: inherit;
+    border-radius: 0;
+    margin: -15px -15px 0;
+    padding: 20px 15px;
+}
+.panel-primary > .panel-heading {
+    background-color: #08a6cc;
+}
+.txt-light {
+    color: #fff !important;
+}
+h6, .panel-title {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.collapse.in {
+    display: block;
+}
+.card-view.panel.panel-primary .panel-body, .card-view.panel.panel-inverse .panel-body {
+    padding-top: 20px;
+}
+card-view.panel .panel-body {
+    padding: 5px 0 20px;
+}
+.control-label {color:#000 !important;display:block;}
+span.help-block {
+    color: red !important;
+    display: block !important;
+}
+body, html {
+    height: 100%;
+    font-family: Montserrat-Regular !important;
+    font-weight: 400;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #08a6cc !important;
+    border-color: #08a6cc !important;
+}
+textarea.msg {
+    border: 1px solid #2121211f !important;
+}

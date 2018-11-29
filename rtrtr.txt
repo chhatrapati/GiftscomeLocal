@@ -1,0 +1,4 @@
+set @payout_amount = (SELECT payout_amount from tbl_game_payout where FIND_IN_SET(payout_digit, @var1) and game_id = @game_id);
+
+
+SELECT payout_amount from tbl_game_payout where FIND_IN_SET(payout_digit, @var1) and game_id = @game_id;

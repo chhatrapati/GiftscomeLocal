@@ -1,0 +1,26 @@
+﻿.dataTables_filter {display:none;}
+div.dataTables_wrapper .ui-widget-header {border-right: medium none;border-top: 0px;font-weight: normal;margin-top: -1px;}
+.widget-title, .modal-header, .table th, div.dataTables_wrapper .ui-widget-header {background: none;border: none;height: 36px;}
+span.DataTables_sort_icon.css_right.ui-icon {height:0 !important;}
+a.fg-button.ui-button.ui-state-default.ui-state-disabled {opacity:1.0 !important;}
+.badge-warning {color: #111!important; background-color: #ffc107!important;}
+.badge-info { color: #fff!important; background-color: #17a2b8!important;}
+.dataTables_length {color: #878787;margin: 20px 14px 5px 0;position: relative;left: 5px;width: 50%;top: 0px;}
+.custom-table tr th{font-size: 14px;}
+.custom-table tr td{font-size: 14px;line-height:0 !important;}
+.clock {height:6px;width:168px;left:24%;bottom:5px;padding-left:50px;}
+#example {font-family: Poppins-regular !important;}
+button.faa-pulse.animated {font-size: 13px;}
+@media only screen and (max-width: 1200px) {
+ .clock {width:200px;left:0% !important; padding-left:95px !important;}
+}
+/*Flip clock css*/
+.flip-clock-wrapper ul li {position: absolute;left: 0;top: 0;width: 66%;height: 60%;line-height: 52px;text-decoration: none !important;}
+.flip-clock-wrapper ul {width:22px !important;height:40px !important;background:none;margin:0px !important;}
+.flip-clock-wrapper .flip {box-shadow:none;	}
+.flip-clock-wrapper ul li a div div.inn {font-size: 15px !important;}
+.flip-clock-dot.top {top: 11px;}
+.flip-clock-dot.bottom {bottom:26px !important;}
+.flip-clock-label {display:none;}
+.flip-clock-wrapper {margin:0px !important;}
+.flip-clock-wrapper ul li a div div.inn {color:#fff;}

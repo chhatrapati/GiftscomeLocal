@@ -1,0 +1,46 @@
+select @temp_total := u.user_points,
+         @user_levels_name1:=(select user_levels_name from user_levels where user_levels_id = 1),
+        @user_levels_complete1:= (select user_levels_complete from user_levels where user_levels_id = 1),
+        
+        @user_levels_name2:= (select  user_levels_name from user_levels where user_levels_id = 2),
+        @user_levels_complete2:= (select  user_levels_complete from user_levels where user_levels_id = 2),
+        
+         
+        @user_levels_name3:= (select  user_levels_name from user_levels where user_levels_id = 3),
+        @user_levels_complete3:= (select  user_levels_complete from user_levels where user_levels_id = 3),
+		
+		@user_levels_name4:= (select  user_levels_name from user_levels where user_levels_id = 4),
+        @user_levels_complete4:= (select  user_levels_complete from user_levels where user_levels_id = 4),
+		
+		@user_levels_name5:= (select  user_levels_name from user_levels where user_levels_id = 5),
+        @user_levels_complete5:= (select  user_levels_complete from user_levels where user_levels_id = 5),
+        
+                
+            (case
+                when u.user_points >= 0 and u.user_points <= @user_levels_complete1 then @user_levels_name1 ELSE CASE 
+             when u.user_points > @user_levels_complete1 and u.user_points <= @user_levels_complete2 then @user_levels_name2  ELSE CASE 
+              when u.user_points > @user_levels_complete2 and u.user_points <= @user_levels_complete3 then @user_levels_name3  ELSE CASE 
+			   when u.user_points > @user_levels_complete3 and u.user_points <= @user_levels_complete4 then @user_levels_name4  ELSE CASE
+             when u.user_points > @user_levels_complete4 then @user_levels_name5
+             
+                else  'NO Points' 
+                    END
+            END
+            END
+            END
+            END) as 'user_level',
+				(case
+					when u.user_points >= 0 and u.user_points <= @user_levels_complete1 then @user_levels_complete1+1 - u.user_points ELSE CASE
+					when u.user_points > @user_levels_complete1 and u.user_points <= @user_levels_complete2 then @user_levels_complete2+1 - u.user_points ELSE CASE
+					when u.user_points > @user_levels_complete2 and u.user_points <= @user_levels_complete3 then @user_levels_complete3+1 - u.user_points ELSE CASE
+					when u.user_points > @user_levels_complete3 and u.user_points <= @user_levels_complete4 then @user_levels_complete4+1 - u.user_points ELSE CASE
+					when u.user_points > @user_levels_complete4 and u.user_points <= @user_levels_complete5 then @user_levels_complete5+1 - u.user_points ELSE CASE
+					when u.user_points > @user_levels_complete5 then 0
+					else 'NO Points' 
+						END
+						END
+						END
+						END
+						END
+						END) as 'next_level'
+					from users as u where id ='$id'

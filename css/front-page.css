@@ -1,0 +1,48 @@
+﻿.carousel-inner{height:58%;}
+a.btn.btn-basic.share-btnv {cursor: pointer;}
+i.fa.fa-facebook{color:#fff;background-color:#3b5998;width:30px;height:30px;line-height:30px;font-size: 16px;border-radius:50%;text-align:center;transition:0.5s all;-webkit-transition:0.5s all;
+-moz-transition:0.5s all;-o-transition:0.5s all;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;-ms-transition:0.5s all;}
+i.fa.fa-facebook:hover {background-color:#17233E;}
+i.fa.fa-twitter,i.fa.fa-whatsapp,i.fa.fa-linkedin{color:#fff;width:30px;height:30px;line-height:30px;font-size: 16px;border-radius:50%;text-align:center;transition:0.5s all;-webkit-transition:0.5s all;
+-moz-transition:0.5s all;-o-transition:0.5s all;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;-ms-transition:0.5s all;}
+@media only screen and (max-width: 800px) {
+.carousel-inner {height:20%;}
+}
+@media only screen and (max-width: 1100px) {
+.carousel-inner {height:28%;}
+}
+.ref-text span{padding-right: 60px;}
+.ref-link{display:flex;justify-content:flex-end;}
+.ref-link input{ background-color: #dbf1f5;padding: .5rem;border-radius: 5px; }
+span.act_price {text-decoration: line-through;color: #999;}
+span.dis_price {margin-left: 15px;}
+span#discount {margin-left: 10px;color: #e42c42;}
+h4.p-b-7 {min-height: 10px;}
+.btn-custom {color: #fff;background-color: #17A2B8;border-color: #17A2B8;line-height: 10px;padding: 7px; margin-left: 10px;}
+.toplist{width:130px;height:130px;}
+.toplist:hover{border:1px solid #0daacf;opacity:0.5;}
+.topname{text-align:center;font-family:poppins-semibold;padding-top:14px; padding-bottam:24px;}
+.topname:hover{font-size:30%;}
+.arrow-steps .step.current {position: relative;}
+.arrow-steps .step.current img{position: absolute;right: 3px;top: 3px;text-align: center;color: white;font-size: 20px;}
+.badge-warning {color: #111!important; background-color: #ffc107!important;}
+.badge-info { color: #fff!important; background-color: #17a2b8!important;}
+.req_daily {padding-left: 37px;text-align:left;line-height: 3rem;}
+.al_req {background-color: #808080;border-color: #808080;cursor:none;}
+@media only screen and (min-width: 576px){
+.help-tip{position: absolute;top: 0px;right: 48px !important;}
+}
+@media only screen and (max-width: 576px) {
+.ref-text{    display: flex;justify-content: center;}	
+.ref-text span{text-align:center;padding-right: 20px;top: 0px;right: 48px;}	
+.req_daily {text-align:center;}
+.ref-link{justify-content:center;}
+.help-tip{position:relative;text-align: center;}
+}
+@media only screen and (max-width: 1199px){
+.share-ref-icon{
+	display:flex;
+	justify-content: center;
+}
+.share-ref-icon a{padding-left:0.25rem;padding-right:0.25rem}	
+}

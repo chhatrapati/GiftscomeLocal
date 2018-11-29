@@ -1,0 +1,193 @@
+
+
+a:hover {
+  text-decoration: none;
+  color: #08a6cc !important;
+}
+
+.btn-show-menu {
+ 
+  height: auto;
+  
+}
+.list-group{
+ overflow:auto;
+ height:283px;
+ 
+}
+#pro_title
+{
+	min-height:62px;
+}
+.main_menu > li > a {
+  font-family: Montserrat-Regular;
+}
+.sale-noti{
+	font-family:Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.title-custome { float: left; width: 100%;}
+.top-icons {height:25px;padding-right: 5px;}
+.top-icons-link {padding-right: 10px;}
+.t-center{font-size:12px; color:#000;}
+.p-t-19{padding-top: 5px;}
+
+.m-text5{
+	font-family: Montserrat-Bold;
+	font-size:26px;
+	color:#666;
+}
+
+.l-text2 {
+font-size:30px;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+color:#fff;
+}
+
+.coin-balance label{
+	font-weight:normal !important;
+	font-size: 14px;
+}
+
+.coin-balance input{
+	font-weight:normal !important;
+	font-size: 14px;
+}
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #0daacf;
+    font-size: 20px;
+}
+/*For Game play interface section*/
+.gift{
+	    padding:0 0 11px !important;
+		width:30px !important;
+		
+	 }
+	 .gftext{
+		 font-size:15px !important;
+		 font-family: Montserrat-Regular;
+	 }
+	 .gftext1{
+		 font-size:15px !important;
+		 font-family: Montserrat-bold;
+		 padding-left:23px;
+	 }
+	 .center{
+         width: 105px;
+		 position: relative;
+
+        
+		
+  
+}
+.img{
+	padding-left:10px;
+  
+}
+.img:hover{
+	background:#08a6cc;
+	
+}
+.line{
+	margin-top:1px;
+	margin-bottam:1px;
+}
+.back-img { 
+background-image: url(../images/balls.png); 
+max-width: 100%; background-position: center; 
+background-repeat: no-repeat; background-size: cover; 
+display: block; width: 35px; height: 35px; margin: 0 auto; 
+}
+ul.heading {border:2px solid #08a6cc;text-align:center;font-family: poppins-SemiBold;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;}
+	.btn-dng { color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;}
+ul.heading li {padding-bottom:10px;}
+.btn-suc {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.size7 {height:27px;}
+.size8 {height:30px;}
+.button-main {position: absolute;top: 0;left: 60px;}
+/*Game end time reminder css*/
+  .toplist{
+		 width:130px;
+		 height:130px;
+		 
+	 }
+	 .toplist:hover{
+		 border:1px solid #0daacf;
+		 opacity:0.5;
+	 }
+	 .topname{
+		 text-align:center;
+		 font-family:poppins-semibold;
+		 padding-top:14px;
+		  padding-bottam:24px;
+		
+	 }
+	 .topname:hover{
+		 font-size:30%;
+		 
+	 }
+	
+	 
+    
+input:checked {
+    height: 20px;
+    width: 20px;
+	color:#08a6cc;
+	
+	
+}
+#count-checked-checkboxes {
+    color:red;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+       font-size: 24px;
+	   background-color: #08a6cc !important;
+}
+.flip-clock-wrapper ul li a div {
+    height: 56%;
+}
+.flip-clock-dot.top {
+    top: 41px;
+}
+.flip-clock-dot.bottom {
+    bottom: 38px;
+}
+.flip-clock-dot {
+    width: 5px !important;
+    height: 5px !important;
+}
+.flip-clock-wrapper ul{
+	height:40px;
+}
+.flip-clock-wrapper ul li a div div.inn {font-size:58px !important;}

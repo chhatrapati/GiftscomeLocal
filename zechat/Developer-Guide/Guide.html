@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <title>Zechat Developer Guide</title>
+
+
+</head>
+
+
+<body class="nav-md">
+
+
+
+<article style="padding: 100px">
+    <h1 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#66aa1e;font-weight:normal;font-size:24px;padding:10px 0px 0px 0px">Similar Product</h1>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#7ebd41;font-weight:normal;font-size:19px;padding:0px 0px 0px 0px;line-height:24px">
+        <a href="#" style="color:#1b90ea" target="_blank">Wchat - Fully Responsive PHP/AJAX Chat</a>
+    </p>
+    <figure>
+        <img src="https://image-cc.s3.envato.com/files/220483512/Wchat-Preview-Image-v1.4.jpg" alt="Ajax Chat" title="Ajax Chat" width="45%" height="">
+    </figure>
+    <strong>
+        <a href="https://codecanyon.net/item/wchat-fully-responsive-phpajax-chat/18047319" style="color:#1b90ea" target="_blank">Wchat Demo</a></strong>
+    <h1 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#66aa1e;font-weight:normal;font-size:24px;padding:10px 0px 0px 0px">Introduction</h1>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#7ebd41;font-weight:normal;font-size:19px;padding:0px 0px 0px 0px;line-height:24px">
+        <a href="#" style="color:#1b90ea" target="_blank">Facebook Style Php Ajax Chat Module</a>
+    </p>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454">
+        zechat is a userfriendly easy to install php chat script that includes lot of uniques features. Including <strong>facebook style inbox messaging System</strong> into your existing website.
+    </p>
+
+    <figure>
+        <img src="img/chat.jpg" alt="Ajax Chat" title="Ajax Chat" width="45%" height="">&nbsp;
+        <img src="img/inbox.jpg" alt="Ajax Chat" title="Ajax Chat" width="45%" height="">
+    </figure>
+
+
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454"><strong>
+        <a href="http://www.bylancer.com/product/zechat/login.php" style="color:#1b90ea" target="_blank">Demo</a></strong><br>
+        Please load the following links in different browsers otherwise it wont work:<br>
+        (Note that due to users trying out the chat links below at the same time, it might work slightly erratically because the username is actually not supposed to be used by multiple users at the same time)
+    </p>
+
+    <p>
+        <a href="http://www.bylancer.com/product/zechat/login.php"style="color:#1b90ea" target="_blank"><img src="img/livedemo.jpg" alt="Live Demo" width="30%"></a>
+    </p>
+
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#f79422;font-size:19px;padding:10px 0px 0px 0px"> Getting Started </h2>
+    <p>After Purchase the module (link below)</p>
+    <p>Developer Guide documentation are available in zip file.</p>
+
+    <p> The script is already manage rosters (i.e. which users are online etc.), and it enables users to chat with each other. <br>
+        I assume your current application also provides that functionality. <br>
+        You must also make sure that <span style="color:#f79422;font-size:14px;">$_SESSION['username']</span> and <span style="color:#f79422;font-size:14px;">$_SESSION['id']</span> is being set when your website session begins. <br>
+        You will understand the logic better after you try the Demo files that I have provided.
+    </p>
+    <p>If you have any issue then you can hire our team to integrate this chat script in your website.</p>
+    <p><strong><a href="https://www.freelancer.in/u/bylancer.html" style="color:#1b90ea" target="_blank">Hire Me</a></strong></p>
+    <p>You must first create a mySQL table as below (or import db.sql) containing 2 tables</p>
+    <div>
+        <img src="../code/img/chat-table.png">
+    </div>
+    <p>Add the following scripts to your page template</p>
+    <div>
+        <div id="highlighter_459598" class="syntaxhighlighter  plain">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr><td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                </td>
+                    <td class="code">
+                        <div class="container">
+                            <div class="line number1 index0 alt2">
+                                <code class="plain plain">&lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;</code>
+                            </div>
+                            <div class="line number2 index1 alt1">
+                                <code class="plain plain">&lt;script type="text/javascript" src="js/chat.js"&gt;&lt;/script&gt;</code>
+                            </div>
+                            <div class="line number2 index1 alt1">
+                                <code class="plain plain">&lt;script type="text/javascript" src="js/lightbox.js"&gt;&lt;/script&gt;</code>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>On existing website integration please see without-registration.php page</p>
+    <div>
+        <div id="highlighter_521927" class="syntaxhighlighter  plain ">
+        <table border="0" cellpadding="0" cellspacing="0" style="display: none">
+            <tbody>
+            <tr>
+                <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number3 index2 alt2">3</div>
+                    <div class="line number4 index3 alt1">4</div>
+                    <div class="line number5 index4 alt2">5</div>
+                    <div class="line number6 index5 alt1">6</div>
+                </td>
+                <td class="code">
+                    <div class="container">
+                        <div class="line number1 index0 alt2">
+                            <code class="plain plain">&lt;link type="text/css" rel="stylesheet" media="all" href="css/chat.css" /&gt;</code>
+                        </div>
+                        <div class="line number2 index1 alt1">
+                            <code class="plain plain">&lt;link type="text/css" rel="stylesheet" media="all" href="css/screen.css" /&gt;</code>
+                        </div>
+                        <div class="line number3 index2 alt2">&nbsp;</div>
+                        <div class="line number4 index3 alt1">
+                            <code class="plain plain">&lt;!--[if lte IE 7]&gt;</code>
+                        </div>
+                        <div class="line number5 index4 alt2">
+                            <code class="plain plain">&lt;link type="text/css" rel="stylesheet" media="all" href="css/screen_ie.css" /&gt;</code>
+                        </div>
+                        <div class="line number6 index5 alt1">
+                            <code class="plain plain">&lt;![endif]--&gt;</code>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div style="color: #0053A6">
+        <p>Change config file setting as your server setting</p>
+        <div class="line number5 index4 alt2">
+            <code class="plain plain">
+                $config['db']['host'] = 'localhost'; <br>
+                $config['db']['name'] = 'chat';<br>
+                $config['db']['user'] = 'root';<br>
+                $config['db']['pass'] = '';<br>
+                $config['db']['pre'] = 'test_';<br>
+                $config['site_url'] = 'http://localhost/zechat/';<br>
+            </code>
+        </div>
+    </div>
+    <p>Now in your list of users online, add “javascript:chatWith(‘USERNAME’);” function where USERNAME is the username for that particular user who he/she wants to chat with.</p>
+    <p>Once that is done, edit chat.php and set your database parameters and try your website.</p>
+    <p>For better understanding, load 2 different browsers (internet explorer, firefox, safari) and point them to with diffrent userid.</p>
+    <p>And start chat with each other and watch the chat functionality come alive!</p>
+    <p>Inorder to integrate your existing website, you must place all your content between the “main_container” div tag.</p>
+
+
+
+
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#f79422;font-size:19px;padding:10px 0px 0px 0px">Browser Compatibility</h2>
+    <ul style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454;list-style-type:disc">
+        <li>Firefox 2+</li>
+        <li>Internet Explorer 6+</li>
+        <li>Safari 2+</li>
+        <li>Opera 9+</li>
+    </ul>
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#f79422;font-size:19px;padding:10px 0px 0px 0px">zechat Requirement</h2>
+    <ul style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454;list-style-type:disc">
+        <li>1 Database</li>
+        <li>Mysql installed</li>
+        <li>PHP 5.4 or higher</li>
+        <li>and a lot of friend !!!</li>
+    </ul>
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#f79422;font-size:19px;padding:10px 0px 0px 0px">Item Support</h2>
+    <p>
+        <a href="https://www.freelancer.in/u/bylancer.html" rel="nofollow" target="_blank">
+            <img src="img/itemsupport.jpg">
+        </a>
+    </p>
+
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:17px;color:#66aa1e;">Licensing</h2>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454">
+        This chat script can be used for <strong>Premium</strong> under Developer license for <strong>commercial purposes</strong>. purchase a license</a>.</p>
+
+    <figure>
+        <a href="http://www.themeforest.net/" style="color:#1b90ea" target="_blank"><img src="img/buynow.png" alt="Ajax Chat" title="Ajax Chat" width="40%"></a>
+    </figure>
+    <p>
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#f79422;font-size:19px;border-top:1px solid #efefef;padding:10px 0px 0px 0px"> Features </h2>
+    <ul style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:16px;line-height:27px;color:#545454;list-style-type:disc">
+        <li style="list-style: outside none none;">1. Share <strong style="color:#66aa1e;">Picture and Files</strong> from your device facebook style</li>
+        <li style="list-style: outside none none;">2. Auto ping when new messages get</li>
+        <li style="list-style: outside none none;">3. <strong style="color:#66aa1e;">Sound notification</strong> Get alerted on new message</li>
+        <li style="list-style: outside none none;">4. Facebook style chat boxes display on bottom right</li>
+        <li style="list-style: outside none none;">5. Load more messages <strong style="color:#66aa1e;">on scroll up</strong></li>
+        <li style="list-style: outside none none;">6. Auto ping when new messages get</li>
+        <li style="list-style: outside none none;">7. Keeps chat boxes open and stores state (data) even when pages are browsed/refreshed similar to Facebook</li>
+        <li style="list-style: outside none none;">8. Displays "Sent at..." after 3 minutes of inactivity</li>
+        <li style="list-style: outside none none;">9. Displays <strong style="color:#66aa1e;">"USERNAME says..." &amp; blinks</strong> chat boxes when window is not in focus</li>
+        <li style="list-style: outside none none;">10. Minimize and close chat boxes</li>
+        <li style="list-style: outside none none;">11. Auto-resize of text input box</li>
+        <li style="list-style: outside none none;">12. Auto-scrolling of chat text</li>
+
+        <li style="list-style: outside none none;">13. Auto-back-off polling policy (hits the server less-often when chat activity is low)</li>
+        <li style="list-style: outside none none;">14. Extremely simple to integrate into existing site</li>
+
+        <li style="list-style: outside none none;">15. Multi chat at same time</li>
+        <li style="list-style: outside none none;">16. Friend List</li>
+        <li style="list-style: outside none none;">17. Easy to setup</li>
+        <li style="list-style: outside none none;">18. Chatbox with inbox messaging</li>
+        <li style="list-style: outside none none;">19. User Friendly</li>
+        <li style="list-style: outside none none;">20. Eye-catching design.</li>
+    </ul>
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:17px;color:#66aa1e;">Future Updates</h2>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454">
+
+        1. Facebook style emoticons(Smiley)<br>
+        2. Facebook style video chat<br>
+    </p>
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:17px;color:#66aa1e;">Comments/Suggestions?</h2>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454">
+        Do let me know your suggestions on how we can improve this code or any other features you would like to add.
+    </p>
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:17px;color:#66aa1e;">Spread The Word </h2>
+    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#545454">
+        If you like what you are reading, then please help spread the word by re-tweeting, blogging and dzone upvoting or use the Share This button below. Thank you.
+    </p>
+
+
+    <h2 style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;color:#f79422;font-size:19px;padding:10px 0px 0px 0px">Social Profile</h2>
+    <p>
+        <a href="https://twitter.com/thebylancer" rel="nofollow"><img src="img/twitter.png"></a>
+        <a href="https://www.facebook.com/bylancer.in/" rel="nofollow"><img src="img/facebook.png"></a>
+        <a href="https://plus.google.com/+Bylancer/" rel="nofollow"><img src="img/google.jpg"></a>
+        <a href="https://www.youtube.com/c/bylancer" rel="nofollow"><img src="img/pintrest.png"></a></p>
+</article>
+</article>
+
+
+
+</article>
+
+
+</body>
+
+</html>

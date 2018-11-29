@@ -1,0 +1,49 @@
+.sale-noti{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+ overflow-x: hidden;
+ margin-top: -10px;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size:14px;
+ color:#666;
+}
+
+.admin_log{ 
+ background-image: url(../../vendor/Login%20Form/images/4.jpg);
+ background-repeat:no-repeat!important;
+ background-size:100%; }
+#sidebar ul li a{
+    color: #ccc;
+
+}
+#sidebar > ul > li > a.active, #sidebar > ul li ul li a.active {   background-color: #27a9e3;
+color: #fff;
+    border-bottom: 1px solid #27a9e3;
+    border-top: 1px solid #27a9e3;
+}
+.icon{
+	color;#ccc;
+}
+.text{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*Css For digit's bg image */
+.digit_img {
+    background-image: url(../images/balls.png);
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 38px;
+    height: 35px;
+	float:left;
+    margin-left:110px;
+}
+.label_digit {
+	text-align: center;
+    padding: 6px 0px 4px 5px;
+	cursor: unset;
+}

@@ -1,0 +1,42 @@
+<div class="row col-md-12 form-group">
+					<div class="col-md-4">
+						<label class="info-title" for="Shipping Address">Shipping Address<span>*</span></label>
+					</div>
+					<div class="col-md-8">
+						<textarea class="form-control unicase-form-control text-input" " name="shippingaddress"><?php echo $row['shippingAddress'];?></textarea>
+						<span class="help-block"></span>
+					</div>
+				</div>	
+				<div class="row col-md-12 form-group">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-8">
+					</div>
+				</div>
+				<div class="row col-md-12 form-group">
+					<div class="col-md-4">
+						<label class="info-title" for="Billing State ">Shipping State  <span>*</span></label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control unicase-form-control text-input" id="shippingstate" name="shippingstate" value="<?php echo $row['shippingState'];?>" >
+						<span class="help-block"></span>
+					</div>
+				</div>	
+				<div class="row col-md-12 form-group">
+					<div class="col-md-4">
+						<label class="info-title" for="Billing City">Shipping City <span>*</span></label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control unicase-form-control text-input" id="shippingcity" name="shippingcity" required="required" value="<?php echo $row['shippingCity'];?>" >
+						<span class="help-block"></span>
+					</div>
+				</div>	
+				<div class="row col-md-12 form-group">
+					<div class="col-md-4">
+						<label class="info-title" for="Billing Pincode">Shipping Pincode <span>*</span></label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control unicase-form-control text-input" id="shippingpincode" name="shippingpincode" required="required" value="<?php echo $row['shippingPincode'];?>" >
+						<span class="help-block"></span>
+					</div>
+				</div>	
